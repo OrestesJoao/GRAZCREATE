@@ -1,0 +1,241 @@
+body, html {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+#header{
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-out 0.2s;
+}
+
+#header.active{
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.2);
+  z-index: 9999;
+}
+
+#header .navbar-collapse{
+ width: auto; 
+}
+
+#header .nav-link{
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  color: var(--dark);
+  border-bottom: solid 4px transparent;
+  transition: 1s;
+}
+
+#header .nav-link:hover{
+  border-bottom: solid 4px #45ada8;
+  color: #547980;
+}
+
+#servicos a.destaque{
+  display: block;
+  background-color: #ecebeb;
+}
+
+#clientes a.link-cliente {
+  padding: 0 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #cacaca;
+  height: 100px;
+  transition: ease-out all 0.2s;
+}
+
+#clientes a.link-cliente:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#clientes a.link-cliente img {
+  filter: grayscale(100%);
+  max-height: 70px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#clientes a.link-cliente:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+#clientes .cliente-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #ecebeb;
+  border-radius: 5px;
+}
+
+#clientes .cliente-texto .imagem {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  margin-left: -40px;
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#clientes .cliente-texto .imagem span {
+  color: #45ada8;
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+#clientes .cliente-texto .telefone {
+  display: flex;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+#clientes .cliente-texto .telefone span {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
+
+#clientes .cliente-texto .telefone img {
+  margin-right: 15px;
+  filter:grayscale(0.9);
+} 
+
+#servicosrecentes .badge{
+  font-weight: 400;
+}
+
+#servicosrecentes .element-item img{
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#servicosrecentes .element-item img:hover{
+  box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+}
+
+#servicosrecentes .button-group{
+  margin-bottom: 30px;
+}
+
+#servicosrecentes .button-group button{
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#servicosrecentes .button-group button + button{
+  margin-left: 30px;
+}
+
+#servicosrecentes .button-group button.active{
+  color: #45ada8;
+}
+
+#depoimentos .depoimento{
+  background-color: #ecebeb;
+  border-radius: 5px;
+  display: flex;
+  padding: 30px;
+}
+
+#depoimentos .depoimento .quote{
+  max-width: 35px;
+  float: right;
+}
+
+#depoimentos .depoimento .name{
+  color: #aaaa;
+}
+
+#depoimentos .depoimento .name span{
+  color: #000;
+  font-weight: 700;
+}
+
+#depoimentos .depoimento-texto{
+  margin-left: 10px;
+}
+
+#depoimentos .depoimento .foto-pessoa{
+  border-radius: 200px;
+
+}
+
+#contato .email {
+  border-radius: 5px;
+  background-color: #364f6b;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contato .email img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contato .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder {
+  background: none;
+  color: #fff;
+}
+
+#contato .email .btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contato ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contato ul li{
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contato ul li:first-child{
+  display: flex;
+  list-style-type: none;
+}
+
+#contato .end{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}

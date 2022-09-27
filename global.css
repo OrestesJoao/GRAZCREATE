@@ -1,0 +1,109 @@
+.button{
+  text-transform: lowercase;
+  font-weight: 500;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+}
+
+.button-primary {
+  background-color: #45ada8;
+  border-color: #45ada8;
+}
+
+
+.button-primary:hover{
+  background-color: var(--darkblue);
+  border-color: var(--darkblue);
+}
+
+.button-primary-outline {
+  border-color:#45ada8;
+  color: #45ada8;
+}
+
+.button-primary-outline:hover {
+  background-color: #547980;
+  border-color: #547980;
+}
+
+#slider{
+  background: url(../acess/slider-bg.svg) no-repeat center bottom;
+  background-size: contain;
+}
+
+#slider h1{
+  text-transform: uppercase;
+  font-size: 900;
+}
+
+#slider h4{
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#servicos a.destaque{
+  display: 	block;
+  background-color: #cacaca;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#servicos a.destaque:hover{
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.12);
+  transform: scale(1.05);
+}
+
+#servicos p{
+  color: #547980;
+}
+
+#servicos a.destaque .img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#servicos a.destaque .img-container img{
+  max-height: 160px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+}
+
+a{
+  color: #45ada8;
+}
+
+a:hover{
+  color: #547980;
+}
+
+.title{
+  text-transform: uppercase	;
+}
+
+.subtitle{
+  color: #cacaca;
+  font-weight: 400;
+}
+
+.block{
+  margin-bottom: 120px;
+}
+
+.block-medium{
+  margin-bottom: 60px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+  background: #45ada8;
+}
+
